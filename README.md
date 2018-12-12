@@ -22,10 +22,45 @@ or add
 to the require section of your `composer.json` file.
 
 
-Usage
------
+**Описание**
+-
+Простой виджет для использования box от AdminLTE
 
-Once the extension is installed, simply use it in your code by  :
+**Содержание** 
+-
+Константы типа блока:
+```
+                const box_default = 'box-default';
+		const box_primary = 'box-primary';
+		const box_info = 'box-info';
+		const box_warning = 'box-warning';
+		const box_success = 'box-success';
+		const box_danger = 'box-danger';
+```
 
+Настройки модуля:
 ```php
-<?= \viktorals\adminlte_box\AutoloadExample::widget(); ?>```
+		public $boxType = 'box-default'; - настройки типа блока(используйте константы)
+		public $boxClass; - класс всего блока
+		public $title = 'Box'; - заголовок блока
+		private $headerLine = true; - линия между contentom и header
+		public $close = true; - кнопка удаления блока
+		public $collapse = true; - кнопка сворачивания блока
+		public $footer = true; - будет ли footer
+		public $contentFooter = 'footer'; - текст footer
+		public $boxSolid =false; - будет ли header закрашен 
+```
+
+**Подключение**
+-
+```php
+ 
+     <?php box::begin([
+     	        'boxColor'=>box::box_info,
+                'boxSolid'=>true,
+            ]); ?>
+           content that may contains
+        <?php box::end(); ?>
+
+ 
+```
