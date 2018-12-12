@@ -55,12 +55,11 @@ to the require section of your `composer.json` file.
 -
 ```php
  
-     <?php box::begin([
-     	        'boxColor'=>box::box_info,
-                'boxSolid'=>true,
-            ]); ?>
-           content that may contains
-        <?php box::end(); ?>
+     <?php box::begin(['boxColor'=>box::box_info,'boxSolid'=>true,]); ?>
+           
+           content that may contains - > то, что будет в блоке.
+     
+     <?php box::end(); ?>
 
  
 ```
