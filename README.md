@@ -43,7 +43,7 @@ to the require section of your `composer.json` file.
 		public $boxType = 'box-default'; - настройки типа блока(используйте константы)
 		public $boxClass; - класс всего блока
 		public $title = 'Box'; - заголовок блока
-		private $headerLine = true; - линия между contentom и header
+		public $headerLine = true; - линия между contentom и header
 		public $close = true; - кнопка удаления блока
 		public $collapse = true; - кнопка сворачивания блока
 		public $footer = true; - будет ли footer

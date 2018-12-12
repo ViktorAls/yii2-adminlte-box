@@ -23,7 +23,7 @@
 		public $boxType = 'box-default';
 		public $boxClass;
 		public $title = 'Box';
-		private $headerLine = true;
+		public $headerLine = true;
 		public $close = true;
 		public $collapse = true;
 		public $footer = true;
