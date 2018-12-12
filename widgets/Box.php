@@ -6,7 +6,7 @@
 	 * Time: 10:45
 	 */
 	
-	namespace common\widgets;
+	namespace viktorals\adminlte_box;
 	
 	
 	use yii\helpers\Html;
