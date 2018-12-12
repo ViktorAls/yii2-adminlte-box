@@ -1,0 +1,21 @@
+{
+    "name": "viktorals/yii2-adminlte-box",
+    "description": " Box widget from adminLTE for Yii",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","adminLTE","widget","box"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ViktorAls",
+            "email": "vip.viktor98@inbox.ru"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "viktorals\\adminlte_box\\": ""
+        }
+    }
+}
